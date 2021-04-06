@@ -8,6 +8,11 @@
     <artifactId>unit-test-dependency</artifactId>
     <dependencies>
         <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.8.1</version>
@@ -42,11 +47,18 @@
             <groupId>org.jmockit</groupId>
             <artifactId>jmockit</artifactId>
             <version>1.30</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
         </dependency>
 
 
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>JD maven2 repository-snapshots</name>
+            <url>http://artifactory.jd.com/libs-snapshots-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
